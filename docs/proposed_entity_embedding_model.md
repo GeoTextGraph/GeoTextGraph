@@ -6,6 +6,8 @@ Build an entity encoder that combines **entity attributes and knowledge graph st
 
 The starting point is the GeoRDF2Vec paper and its accompanying repository. The proposed model is a new experimental architecture, not an implemented modification of that repository.
 
+**DBpedia is the chosen dataset** for developing and evaluating this model. Its entity attributes will provide the text inputs for Qwen, and its RDF triples will provide the graph edges and relation types.
+
 ## Entity input
 
 Represent each entity as JSON containing its available attributes. Convert the JSON into consistent text before passing it to a pretrained text encoder.
@@ -130,7 +132,7 @@ Report multiple random seeds, prediction metrics, runtime, and memory usage. Com
 
 ## Data and scalability
 
-The existing project contains a DBpedia 2016-04 English subset and KGBench `dmg777k` data. Start with a manageable subset rather than all of DBpedia. Labels and descriptions for Qwen may require additional data preparation: the current DBpedia preparation script discards most non-geographic literals.
+Use DBpedia as the primary dataset. The existing project contains a DBpedia 2016-04 English subset that can serve as the starting point; the release for the final experiments remains to be selected and recorded. Begin with a manageable subset rather than all of DBpedia. Labels and descriptions for Qwen may require additional data preparation: the current DBpedia preparation script discards most non-geographic literals.
 
 For 10 million entities, cached 1,024-dimensional float32 vectors alone require about **40.96 GB** of storage. Model weights, edge data, activations, gradients, and optimizer state require additional memory. Keeping Qwen frozen allows its outputs to be generated in batches and stored outside GPU memory.
 
