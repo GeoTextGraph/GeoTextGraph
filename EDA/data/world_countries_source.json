@@ -1,0 +1,7 @@
+{
+  "source": "Natural Earth, 1:110m Admin 0 Countries",
+  "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+  "download_date": "2026-11-16",
+  "country_count_definition": "Distinct subjects with a direct dbo:country edge to each country resource. Counts for matched aliases are unioned per map region. Entities linked to multiple countries can be counted in multiple regions. Historical and unmatched references remain in dbpedia_country_counts.csv.",
+  "map_resolution": "The coarse world map omits some small countries and territories."
+}

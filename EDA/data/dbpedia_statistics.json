@@ -1,0 +1,44 @@
+{
+  "distinct_resource_nodes": 8892784,
+  "distinct_subjects": 8068653,
+  "distinct_resource_objects": 4499665,
+  "dbpedia_resources": 8512377,
+  "dbpedia_subjects": 8068653,
+  "category_resources": 1409124,
+  "distinct_predicates": 678,
+  "statements": 85562556,
+  "literal_statements": 3122853,
+  "files": [
+    {
+      "file": "article_categories_en.ttl",
+      "statements": 22583308,
+      "bytes": 3452334230
+    },
+    {
+      "file": "geo_coordinates_mappingbased_en.ttl",
+      "statements": 2356454,
+      "bytes": 346855683
+    },
+    {
+      "file": "instance_types_en.ttl",
+      "statements": 5214240,
+      "bytes": 756372528
+    },
+    {
+      "file": "instance_types_transitive_en.ttl",
+      "statements": 31490585,
+      "bytes": 4565067400
+    },
+    {
+      "file": "mappingbased_objects_en.ttl",
+      "statements": 18295010,
+      "bytes": 2516973490
+    },
+    {
+      "file": "skos_categories_en.ttl",
+      "statements": 5622959,
+      "bytes": 972973378
+    }
+  ],
+  "count_definition": "Resources are distinct full IRIs occurring as subjects or resource objects; predicate-only IRIs and literal values are excluded. Statement counts include repeated triples across files."
+}
